@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmoWave - Cosmic Contact</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap');
+
+        :root {
+            --primary-color: #00ffff;
+            --secondary-color: #ff00ff;
+            --bg-color: #000033;
+            --text-color: #ffffff;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(255, 0, 255, 0.1) 0%, transparent 20%);
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(0,0,51,0.7);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px var(--primary-color);
+            backdrop-filter: blur(10px);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
+        h1 { font-size: 2.5em; }
+        h2 { font-size: 2em; margin-bottom: 20px; }
+        h3 { font-size: 1.5em; margin-bottom: 15px; }
+
+        main {
+            flex: 1;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .support-section {
+            background-color: rgba(0,0,51,0.6);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .support-section:hover {
+            box-shadow: 0 0 50px rgba(255, 0, 255, 0.5);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            display: none;
+            padding-left: 20px;
+            border-left: 2px solid var(--secondary-color);
+        }
+
+        button {
+            background-color: rgba(0, 255, 255, 0.1);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            padding: 12px 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 50px;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            align-self: flex-start;
+        }
+
+        button:hover {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            box-shadow: 0 0 20px var(--primary-color);
+        }
+
+        footer {
+            background-color: rgba(0,0,51,0.7);
+            color: var(--text-color);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+            text-shadow: 0 0 10px var(--secondary-color);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CosmoWave Cosmic Support</h1>
+    </header>
+
+    <main>
+        <section class="support-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">Q: How can I access international radio stations?</div>
+                <div class="faq-answer">A: CosmoWave provides access to a wide range of international radio stations. Simply navigate through our platform’s station directory and select the station you wish to listen to.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q: Can I request a specific radio station to be added to CosmoWave?</div>
+                <div class="faq-answer">A: Absolutely! We welcome suggestions for new stations. Please use the Cosmic Support to submit your request, and our team will review it for potential inclusion in our lineup</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q: Can I advertise on CosmoWave?</div>
+                <div class="faq-answer">A: Yes, you can advertise on CosmoWave. Please reach out to our advertising department via the Cosmic Support section for more information on available advertising options and rates!</div>
+            </div>
+        </section>
+
+        <section class="support-section">
+            <h2>Contact Intergalactic Support</h2>
+            <a href="mailto:info@info.com" class="email-button"><button type="button">Send Email</button></a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 <a href="mailto:info@cosmowave.com">CosmoWave</a>. All rights reserved across the multiverse.</p>
+        <p>
+        <a href="index.html">Return to Cosmic Hub</a> | 
+        <a href="about.html">About</a> |
+        <a href="agree.html">Quantum Agreement</a> | 
+        <a href="buyme.html">Buy Me A Coffee</a>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
+

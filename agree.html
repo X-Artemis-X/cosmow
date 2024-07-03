@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmoWave - Quantum Agreement</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap');
+
+        :root {
+            --primary-color: #00ffff;
+            --secondary-color: #ff00ff;
+            --bg-color: #000033;
+            --text-color: #ffffff;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(255, 0, 255, 0.1) 0%, transparent 20%);
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(0,0,51,0.7);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px var(--primary-color);
+            backdrop-filter: blur(10px);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
+        h1 { font-size: 2.5em; }
+        h2 { font-size: 2em; margin-bottom: 20px; }
+        h3 { font-size: 1.5em; margin-bottom: 15px; }
+
+        main {
+            flex: 1;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .agreement-section {
+            background-color: rgba(0,0,51,0.6);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .agreement-section:hover {
+            box-shadow: 0 0 50px rgba(255, 0, 255, 0.5);
+        }
+
+        .agreement-item {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: rgba(0,0,51,0.7);
+            color: var(--text-color);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+            text-shadow: 0 0 10px var(--secondary-color);
+        }
+
+        button {
+            background-color: rgba(0, 255, 255, 0.1);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            padding: 12px 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 50px;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            align-self: flex-start;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            box-shadow: 0 0 20px var(--primary-color);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CosmoWave Quantum Agreement</h1>
+    </header>
+
+    <main>
+        <section class="agreement-section">
+            <h2>Introduction</h2>
+            <div class="agreement-item">
+                <p>Welcome to CosmoWave! Our Quantum Agreement outlines the terms and conditions for using our services, including our intergalactic radio stations. By accessing and using our services, you agree to comply with these terms.</p>
+            </div>
+        </section>
+
+        <section class="agreement-section">
+            <h2>Terms of Use</h2>
+            <div class="agreement-item">
+                <p>All users must adhere to our terms of use. Any violations may result in the suspension or termination of your access to CosmoWave services. Please use our services responsibly and respect other users.</p>
+            </div>
+        </section>
+
+        <section class="agreement-section">
+            <h2>Code of Conduct</h2>
+            <div class="agreement-item">
+                <p>Users are expected to interact with our services in a respectful and courteous manner. Harassment, discrimination, or any form of abuse will not be tolerated. Let's maintain a positive and welcoming community for all.</p>
+            </div>
+        </section>
+
+        <section class="agreement-section">
+            <h2>Liability and Responsibility</h2>
+            <div class="agreement-item">
+                <p>CosmoWave is not responsible for any damages or losses that may occur from using our services. Users are responsible for their own actions and must ensure they have the proper equipment and settings for optimal performance.</p>
+            </div>
+        </section>
+
+        <section class="agreement-section">
+            <h2>Contact Us</h2>
+            <div class="agreement-item">
+                <p>If you have any questions or concerns about our Quantum Agreement, feel free to reach out to us. We are here to assist you with any inquiries you may have.</p>
+                <a href="mailto:info@info.com" class="email-button"><button type="button">Send Email</button></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+         <p>© 2024 <a href="mailto:info@cosmowave.com">CosmoWave</a>. All rights reserved across the multiverse.</p>
+         <p>
+            <a href="index.html">Return to Cosmic Hub</a> |
+            <a href="about.html">About</a> |
+            <a href="buyme.html">Buy Me A Coffee</a> | 
+            <a href="contact.html">Cosmic Support</a>
+         </p>
+    </footer>
+
+</body>
+</html>
+

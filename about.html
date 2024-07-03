@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About CosmoWave</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap');
+
+        :root {
+            --primary-color: #00ffff;
+            --secondary-color: #ff00ff;
+            --bg-color: #000033;
+            --text-color: #ffffff;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(255, 0, 255, 0.1) 0%, transparent 20%);
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(0,0,51,0.7);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px var(--primary-color);
+            backdrop-filter: blur(10px);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
+        h1 { font-size: 2.5em; }
+        h2 { font-size: 2em; margin-bottom: 20px; }
+        h3 { font-size: 1.5em; margin-bottom: 15px; }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: rgba(0,0,51,0.7);
+            color: var(--text-color);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--secondary-color);
+            text-shadow: 0 0 10px var(--secondary-color);
+        }
+
+        p {
+            max-width: 800px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        button {
+            background-color: rgba(0, 255, 255, 0.1);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            padding: 12px 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 50px;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+
+        button:hover::before {
+            left: 100%;
+        }
+
+        button:hover {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            box-shadow: 0 0 20px var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About CosmoWave</h1>
+    </header>
+
+    <main>
+        <h2>Our Mission</h2>
+        <p>CosmoWave is your gateway to the universe, delivering the finest interstellar music and cosmic experiences right to your ears. We are dedicated to bringing you a unique blend of sounds from across the multiverse, enhancing your auditory experience with our carefully curated cosmic stations.</p>
+        
+        <h2>Our Vision</h2>
+        <p>Our vision is to connect listeners with the wonders of the universe through sound. By combining advanced technology and a passion for music, CosmoWave aims to transcend the boundaries of traditional radio, offering an immersive, futuristic experience.</p>
+        
+        <h2>Contact Us</h2>
+        <p>For more information, inquiries, or cosmic support, feel free to reach out to us at <a href="mailto:info@cosmowave.com">info@cosmowave.com</a>. We are here to assist you on your journey through the musical cosmos.</p>
+        
+        <div class="center">
+            <button onclick="location.href='index.html'">Home</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 <a href="mailto:info@cosmowave.com">CosmoWave</a>. All rights reserved across the multiverse.</p>
+        <p>
+            <a href="index.html">Return to Cosmic Hub</a> |
+            <a href="agree.html">Quantum Agreement</a> |
+            <a href="buyme.html">Buy Me A Coffee</a> |
+            <a href="contact.html">Cosmic Support</a>
+        </p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support CosmoWave</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap');
+
+        :root {
+            --primary-color: #00ffff;
+            --secondary-color: #ff00ff;
+            --bg-color: #000033;
+            --text-color: #ffffff;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(255, 0, 255, 0.1) 0%, transparent 20%);
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(0,0,51,0.7);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px var(--primary-color);
+            backdrop-filter: blur(10px);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
+        h1 { font-size: 2.5em; }
+        h2 { font-size: 2em; margin-bottom: 20px; }
+        h3 { font-size: 1.5em; margin-bottom: 15px; }
+
+        main {
+            flex: 1;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .support-section {
+            background-color: rgba(0,0,51,0.6);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .support-section:hover {
+            box-shadow: 0 0 50px rgba(255, 0, 255, 0.5);
+        }
+
+        .support-item {
+            margin-bottom: 20px;
+        }
+
+        .support-item p {
+            font-size: 1.2em;
+        }
+
+        .coffee-button {
+            background-color: rgba(0, 255, 255, 0.1);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            padding: 12px 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 50px;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .coffee-button:hover {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            box-shadow: 0 0 20px var(--primary-color);
+        }
+
+        footer {
+            background-color: rgba(0,0,51,0.7);
+            color: var(--text-color);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+            text-shadow: 0 0 10px var(--secondary-color);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Support CosmoWave</h1>
+    </header>
+
+    <main>
+        <section class="support-section">
+            <h2>Buy Me a Coffee</h2>
+            <div class="support-item">
+                <p>If you enjoy our intergalactic radio stations and want to help keep CosmoWave running, consider buying us a coffee! Your support helps us maintain and improve our services across the multiverse.</p>
+            </div>
+            <a href="https://www.buymeacoffee.com/yourpage" target="_blank" class="coffee-button">Buy Me a Coffee</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 <a href="mailto:info@cosmowave.com">CosmoWave</a>. All rights reserved across the multiverse.</p>
+        <p>
+            <a href="index.html">Return to Cosmic Hub</a> |
+            <a href="agree.html">Quantum Agreement</a> |
+            <a href="buyme.html">Buy Me A Coffee</a> |
+            <a href="contact.html">Cosmic Support</a>
+        </p>
+    </footer>
+
+</body>
+</html>
+
